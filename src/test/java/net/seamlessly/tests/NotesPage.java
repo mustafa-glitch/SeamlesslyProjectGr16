@@ -9,5 +9,5 @@ public class NotesPage {
     WebDriver driver = WebDriverFactory.getDriver("chrome");
 
     WebElement NotesModule = driver.findElement(By.xpath("//div[@id='apps']//li[contains(@data-id,'notes')]"));
-
+    WebElement newNote = driver.findElement(By.cssSelector("#notes_new_note"));
 }
