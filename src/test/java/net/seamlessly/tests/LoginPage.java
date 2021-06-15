@@ -10,6 +10,8 @@ public class LoginPage {
 WebDriver driver = WebDriverFactory.getDriver("chrome");
     WebElement usernameInputBox = driver.findElement(By.cssSelector("#user"));
     WebElement passwordInputBox = driver.findElement(By.cssSelector("password"));
+    WebElement loginButton = driver.findElement(By.cssSelector("submit-form"));
+
 
 
 }
