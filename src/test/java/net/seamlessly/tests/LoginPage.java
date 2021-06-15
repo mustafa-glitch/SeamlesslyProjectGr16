@@ -9,5 +9,7 @@ import org.testng.annotations.Test;
 public class LoginPage {
 WebDriver driver = WebDriverFactory.getDriver("chrome");
     WebElement usernameInputBox = driver.findElement(By.cssSelector("#user"));
+    WebElement passwordInputBox = driver.findElement(By.cssSelector("password"));
+
 
 }
