@@ -1,6 +1,4 @@
 package net.seamlessly.tests;
 
-public class PhotosPage {
-
-
+public class folderview {
 }
