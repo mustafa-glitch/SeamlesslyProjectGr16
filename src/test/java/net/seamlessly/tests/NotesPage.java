@@ -4,13 +4,19 @@ import net.seamlessly.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-public class NotesPage {
-    WebDriver driver = WebDriverFactory.getDriver("chrome");
-
-    WebElement NotesModule = driver.findElement(By.xpath("//div[@id='apps']//li[contains(@data-id,'notes')]"));
-    WebElement newNote = driver.findElement(By.cssSelector("#notes_new_note"));
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 
+public class NotesPage extends LoginPage {
+
+
+    @Test
+    public void test1() throws InterruptedException {
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//*[@id='appmenu']/li[6]")).click();
+
+    }
 
 }
